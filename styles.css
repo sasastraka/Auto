@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #7CFC00; 
+}
+
+.grass {
+  background-color: #7CFC00; 
+  height: 50vh; 
+}
+
+.road {
+  background-color: #808080; 
+  height: 30vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.stripes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.stripe {
+  background-color: #fff; 
+  height: 10px;
+  width: 70%;
+  margin: 10px 0;
+}
+
+.car {
+  width: 200px;
+  height: 100px;
+  background-color: #ffcc00; 
+  border-radius: 20px;
+  position: absolute;
+  animation: drive 4s linear infinite;
+}
+
+.roof {
+  width: 140px;
+  height: 40px;
+  background-color: #ffcc00; 
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  top: 10px;
+}
+
+.window {
+  width: 30px;
+  height: 30px;
+  background-color: #a9d0f5; 
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.body {
+  width: 200px;
+  height: 40px;
+  background-color: #ffcc00; 
+  border-radius: 10px;
+  position: relative;
+  top: 10px;
+}
+
+.wheels {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  position: relative;
+  top: 20px;
+}
+
+.wheel {
+  width: 30px;
+  height: 30px;
+  background-color: #000; 
+  border-radius: 50%;
+}
+
+.left-wheel {
+  margin-left: 20px;
+}
+
+.right-wheel {
+  margin-right: 20px;
+}
+
+@keyframes drive {
+  0% {
+      left: -200px;
+  }
+  100% {
+      left: 100%;
+  }
+}
